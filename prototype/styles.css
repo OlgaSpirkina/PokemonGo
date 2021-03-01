@@ -1,0 +1,75 @@
+@media only screen and
+(min-device-width : 320px) and
+(max-device-width : 480px)
+{
+    body{
+      font-size: .8rem;
+    }
+    h1{
+      text-transform: uppercase;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 5px;
+      color: #ee453b;
+      text-shadow: 0 0 2px #0b4da2, 0 0 2px #0b4da2, 0 0 2px #0b4da2, 0 0 2px #0b4da2, 0 0 2px #0b4da2;
+    }
+    .flexb{
+      padding: 5px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 680px;
+      border: 2px solid #ee453b;
+    }
+    .inflexb{
+      width: 50%;
+      float: left;
+      margin-right: 5px;
+    }
+    .inflexb_2{
+      width: 60%;
+      float: right;
+      margin-left: 5px;
+    }
+    .or{
+      height: 680px;
+      border: 2px solid #ee453b;
+      padding: 5px;
+    }
+    .livre{
+      width: inherit;
+      height: 5vw;
+      border: 2px solid #0b4da2;
+    }
+    .livre_1{
+      margin-right: 50%;
+      margin-top: 30px;
+    }
+    .livre_2{
+      margin: 0 auto;
+      text-align: center;
+    }
+    .livre_3{
+      margin-left: 70%;
+      margin-bottom: 50px;
+    }
+    #livre_d_or{
+      display: block;
+      position: relative;
+      margin-left: auto;
+      margin-right: auto;
+      top: 50px;
+    }
+    button{
+      display: block;
+      position: relative;
+      margin-left: 70%;
+      top: 70px;
+      border: 2px solid #0b4da2;
+      background-color: #ee453b;
+      height: 10vw;
+      border-radius: 5px;
+
+    }
+
+  }
