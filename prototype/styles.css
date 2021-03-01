@@ -69,7 +69,24 @@
       background-color: #ee453b;
       height: 10vw;
       border-radius: 5px;
-
     }
-
+    .accueil{
+      height: 680px;
+      border: 2px solid #0b4da2;
+      background-color: #cccccc;
+      background-repeat: no-repeat;
+    }
+    nav ul{
+      display: flex;
+      flex-flow: column;
+      margin: 0 auto;
+      list-style: none;
+    }
+    nav ul li a{
+      margin: 0 auto;
+      text-decoration: none;
+      width: 50vw;
+      line-height: 2;
+      font-size: 2rem;
+    }
   }
