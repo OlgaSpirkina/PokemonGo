@@ -69,7 +69,7 @@
     text-align: center;
   }
   .in_menu:hover {
-    opacity: 0.85;
+    opacity: 0.8;
   }
 
   ul {
@@ -214,6 +214,77 @@
     letter-spacing: 2px;
     text-align: center;
     width: 55vw;
+  }
+
+  /* Styliser la section Pokedex */
+  .inpokedex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    height: 600px;
+  }
+
+  .flip-box img {
+    width: 80%;
+  }
+
+  /* styling flip box */
+  .flip-box {
+    background-color: transparent;
+    width: 33vw;
+    height: 20vh;
+    margin: 1px;
+    font-size: 0.9rem;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px;
+  }
+
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateX(180deg);
+  }
+
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+  }
+
+  .flip-box-front {
+    background-color: #bbb;
+    color: black;
+  }
+
+  .flip-box-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateX(180deg);
+    width: 30vw;
+    height: 20vh;
+  }
+  .flip-box-back p {
+    width: 30vw;
+    height: 15vh;
+    font-size: 0.5rem;
+    text-align: inherit;
+    padding: 5px;
+  }
+
+  .flip-box-back p:hover {
+    scale: 2;
+    background-color: grey;
   }
 }
 
