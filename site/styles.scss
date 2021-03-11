@@ -1,0 +1,163 @@
+@import 'mixin';
+@import 'variables';
+@media only screen and
+(min-device-width : 320px) and
+(max-device-width : 600px)
+{
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  // paralax
+  body{
+    display: flex;
+    flex-direction: column;
+    background-image: url("https://pokemongolive.com/img/global/bg.jpg");
+    margin: 0 auto;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: monospace, sans-serif;
+  }
+  h1{
+    @include font_style_secondairy;
+    margin-bottom: 30px;
+  }
+  .hidden_accueil{
+    display: none;
+  }
+  section{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  img{
+    width: 65%;
+  }
+  .image_logo_Pokemon{
+      width: 80%;
+      margin-bottom: 50px;
+    }
+  .accueil, .inor, #or{
+    height: $height_of_section;
+  }
+/* Styliser la navbar */
+  .in_menu{
+    @include button_style;
+    @include font_style_main;
+    &:hover{
+      opacity: 0.85;
+    }
+  }
+  ul{
+    list-style: none;
+  }
+  /* menu burger et effet sur le passage de la sourie 'hidden-visible' */
+  .fa{
+    display: inline-block;
+    position: fixed;
+    background-color: rgba(255,253,245,0.85);
+    margin-right: 30px;
+    margin-top: 15px;
+    right: 0;
+    scale: 3.2;
+    z-index: 1;
+  }
+  .in_fa-bars{
+    text-decoration: none;
+    &:visited{
+      color: #000;
+    }
+  }
+  .text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70vw;
+    margin-top: 50px;
+    @include font_style_main;
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  nav{
+        display: none;
+        width: 100vw;
+        height: 70vh;
+        position: absolute;
+        margin: 0;
+  }
+  .parent:hover .navbar{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+  }
+  .parent:hover .text{
+        visibility: hidden;
+  }
+/* le container dans chaque section contenant le text  */
+  .flexb{
+    background-color: rgba(255,253,245,0.85);
+    border-radius: 5px;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+/* les images dans la partie 'application' */
+  .inflexb{
+    float: left;
+    margin-right: 5px;
+  }
+  .inflexb_2{
+    float: right;
+    margin-left: 5px;
+  }
+/* Styliser la section livre d'or */
+  .livre{
+    width: inherit;
+    height: 5vw;
+    margin: 20px 0;
+    border: 2px solid #0b4da2;
+    height: 5vh;
+    font-size: 1rem;
+  }
+  .livre_1{
+    margin-right: 50%;
+    margin-top: 30px;
+    height: 10vh;
+  }
+  .livre_2{
+    margin: 0 auto;
+    text-align: center;
+  }
+  .livre_3{
+    margin-left: 60%;
+    width: 35vw;
+  }
+  #livre_d_or{
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+  }
+  .text_and_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  textarea{
+    background-color: rgba(0, 0, 0, 0.1);
+    margin-bottom: 60px;
+    font-size: 1rem;
+  }
+  button{
+    @include button_style;
+    @include font_style_main;
+    width: 55vw;
+  }
+}
