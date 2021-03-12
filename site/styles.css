@@ -113,12 +113,12 @@
   nav {
     display: none;
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
     position: absolute;
     margin: 0;
   }
 
-  .parent:hover .navbar {
+  .parent:hover nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
